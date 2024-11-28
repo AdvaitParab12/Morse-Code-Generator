@@ -119,3 +119,47 @@ body {
   padding: 0.5rem;
   color: #181c14;
 }
+
+@media (max-width: 640px) {
+  body{
+    overflow-x: hidden;
+  }
+  .heading {
+    h1 {
+      width: 20rem;
+      margin-left: 0rem;
+      font-size: 1.3rem;
+      font-weight: 900;
+    }
+    p {
+      width: 16rem;
+      margin-left: 0rem;
+      font-weight: 300;
+      font-size: 0.7rem;
+    }
+  }
+  .converter {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    .text,
+    .morse {
+      width: 65%;
+      height: 50%;
+    }
+  }
+  .grid {
+    display: none;
+  }
+  .bgparent{
+    padding: 1rem;
+  }
+  .bg {
+    background-image: url("./assets/morsetable.png");
+    height: 20rem;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+}
