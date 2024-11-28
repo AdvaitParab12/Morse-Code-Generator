@@ -74,6 +74,12 @@ textInputEl.addEventListener("keydown", (e) => {
   }
 });
 
+textInputEl.addEventListener("input", (e) => {
+  const inputText = e.target.value;
+  const morseCode = inputText.split("").map(char => code[char] || " ").join(" ");
+  morseInputEl.value = morseCode;
+});
+
 textInputEl.addEventListener("keydown", (e) => {
   if (e.key === "Backspace") {
     let morseInputNew = morseInputEl.value.trim().split(" ");
